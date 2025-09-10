@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Furniking</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="top-bar">
     <div class="container">
-      <span>Welcome to our online shop</span>
-      <div class="top-right"><span>Русский (RUB)</span> | <a href="#">Войти или Зарегистрироваться</a></div>
+      <span>Добро пожаловать в наш интернет магазин </span>
+      <div class="top-right">
+        <span>Русский (RUB)</span> | <a href="#">Войти или Зарегистрироваться</a>
+      </div>
     </div>
   </div>
 
   <header class="header container">
-    <div class="logo"><img src="images/logo.png" alt="Furniking Logo"><h1>Furniking</h1></div>
+    <div class="logo">
+      <img src="images/logo.png" alt="Furniking Logo">
+      <h1>Furniking</h1>
+    </div>
     <div class="search-bar">
       <input type="text" placeholder="Поиск">
       <select>
-        <option>Категории</option><option>Стул</option><option>Стол</option><option>Диван</option>
+        <option>Категории</option>
+        <option>Стул</option>
+        <option>Стол</option>
+        <option>Диван</option>
       </select>
       <button class="search-btn" aria-label="Search">🔍</button>
     </div>
-    <div class="icons"><span class="cart">🛒</span><span>🔔</span><span>👤</span></div>
+    <div class="icons">
+      <span class="cart">🛒</span>
+      <span>🔔</span>
+      <span>👤</span>
+    </div>
   </header>
 
   <nav class="navbar">
@@ -32,50 +46,93 @@
         <input type="checkbox" id="toggle-all" class="toggle-all">
         <label for="toggle-all" class="all-btn">☰ ВСЕ КОЛЛЕКЦИИ</label>
         <ul id="collections-menu" class="dropdown">
-          <li><a href="#">Все</a></li><li><a href="#">Новинки</a></li><li><a href="#">Распродажа</a></li>
+          <li><a href="#">Все</a></li>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Распродажа</a></li>
           <li><a href="#">Мебель</a></li>
           <li class="has-submenu">
             <input type="checkbox" id="toggle-categories">
             <label for="toggle-categories" class="category-label">Категории</label>
             <ul class="submenu">
-              <li><a href="#">Стул</a></li><li><a href="#">Стол</a></li><li><a href="#">Диван</a></li>
+              <li><a href="#">Стул</a></li>
+              <li><a href="#">Стол</a></li>
+              <li><a href="#">Диван</a></li>
             </ul>
           </li>
-          <li><a href="#">Зеркала</a></li><li><a href="#">Табуреты</a></li><li><a href="#">Скамейки</a></li>
+          <li><a href="#">Зеркала</a></li>
+          <li><a href="#">Табуреты</a></li>
+          <li><a href="#">Скамейки</a></li>
         </ul>
       </div>
       <ul class="menu">
-        <li><a href="#">ГЛАВНАЯ</a></li><li><a href="#">МАГАЗИН</a></li><li><a href="#">БЛОГ</a></li>
-        <li><a href="#">О НАС</a></li><li><a href="#">КОНТАКТЫ</a></li>
+        <li><a href="#">ГЛАВНАЯ</a></li>
+        <li><a href="#">МАГАЗИН</a></li>
+        <li><a href="#">БЛОГ</a></li>
+        <li><a href="#">О НАС</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
       </ul>
     </div>
   </nav>
-
+  
   <section class="hero container">
     <div class="hero-inner">
       <div class="hero-text">
         <p class="top-text">ЛУЧШИЕ КОЛЛЕКЦИИ 2022 ГОДА</p>
-        <h2>Мы обслуживаем ваш <br><span class="highlight">Мебель</span></h2>
+        <h2>Мы обслуживаем Вашу <br><span class="highlight">Мебель</span></h2>
         <p class="subtitle">Получите скидку 50% на все товары</p>
         <a href="#" class="btn">КУПИТЬ СЕЙЧАС</a>
       </div>
+
       <div class="hero-img">
         <img src="images/chair.png" alt="Chair">
+
         <div class="side-products">
-          <div class="product"><img src="images/chair-small.png" alt="Office Desk Chair"><span class="price">$120</span><span class="name">Офисный стул</span></div>
-          <div class="product"><img src="images/sofa-small.png" alt="Home Alisa Sofa"><span class="name">Диван Alisa</span></div>
-          <div class="product"><img src="images/yellow-chair.png" alt="Modern Chair"><span class="name">Современный стул</span></div>
+          <div class="product">
+            <img src="images/chair-small.png" alt="Office Desk Chair">
+            <span class="price">$120</span>
+            <span class="name">Офисный стул</span>
+          </div>
+
+          <div class="product">
+            <img src="images/sofa-small.png" alt="Home Alisa Sofa">
+            <span class="name">Диван Alisa</span>
+          </div>
+
+          <div class="product">
+            <img src="images/yellow-chair.png" alt="Modern Chair">
+            <span class="name">Современный стул</span>
+          </div>
         </div>
       </div>
-      <div class="slider-dots"><span class="dot"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+
+      <div class="slider-dots">
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </div>
   </section>
 
+
   <section class="features container">
-    <div class="feature"><img src="icons/shipping.svg" alt=""><p>Бесплатная доставка</p></div>
-    <div class="feature"><img src="icons/gift.svg" alt=""><p>Подарочная карта</p></div>
-    <div class="feature"><img src="icons/payment.svg" alt=""><p>Быстрая оплата</p></div>
-    <div class="feature"><img src="icons/support.svg" alt=""><p>Поддержка 24/7</p></div>
+    <div class="feature">
+      <img src="icons/shipping.svg" alt="">
+      <p>Бесплатная доставка</p>
+    </div>
+    <div class="feature">
+      <img src="icons/gift.svg" alt="">
+      <p>Подарочная карта</p>
+    </div>
+    <div class="feature">
+      <img src="icons/payment.svg" alt="">
+      <p>Быстрая оплата</p>
+    </div>
+    <div class="feature">
+      <img src="icons/support.svg" alt="">
+      <p>Поддержка 24/7</p>
+    </div>
   </section>
 </body>
+
 </html>
